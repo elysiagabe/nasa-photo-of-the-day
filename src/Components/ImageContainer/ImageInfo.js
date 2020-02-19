@@ -1,11 +1,11 @@
 import React from "react";
 
-const ImageInfo = () => {
+const ImageInfo = props => {
     return (
         <div>
-            <h2>Title</h2>
-            <h3>Date</h3>
-            <p>Caption</p>
+            <h2>{props.title}}</h2>
+            <h3>{props.date}</h3>
+            <p>{props.caption}</p>
         </div>
     )
 }
