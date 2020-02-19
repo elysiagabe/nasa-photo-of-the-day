@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import Logo from "./Assets/nasa-logo.png"
+import Logo from "./Assets/nasa-logo.png";
+import ImageContainer from "./Components/ImageContainer/ImageContainer";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
       </p>
+
+      <ImageContainer />
     </div>
   );
 }
