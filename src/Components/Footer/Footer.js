@@ -6,6 +6,7 @@ const StyledFooter = styled.footer`
     color: white;
     padding: 32px 0;
     font-family: "Muli";
+    font-size: 1.4rem;
 `;
 
 const Footer = () => {
