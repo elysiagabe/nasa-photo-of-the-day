@@ -3,7 +3,6 @@ import axios from "axios";
 import Image from "./Image";
 import ImageInfo from "./ImageInfo";
 import ImageDatePicker from "./ImageDatePicker"
-import "./ImageContainer.css";
 import styled from "styled-components";
 
 const MainSection = styled.div`

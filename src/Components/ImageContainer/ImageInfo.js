@@ -37,8 +37,11 @@ const ImageInfo = props => {
         <ImageInfoCard>
             <ImageTitle>{props.title}</ImageTitle>
             <DateSubtitle>{props.date}</DateSubtitle>
-            <ImageCaption>{props.caption}</ImageCaption>
-        </ImageInfoCard>
+            <ImageCaption className="leading-relaxed">{props.caption}
+            </ImageCaption>
+            <p className="text-center">Testing TailWind</p>
+        </ImageInfoCard> 
+        
     )
 }
 
