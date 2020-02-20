@@ -1,9 +1,10 @@
 import React from "react";
+import styled from "styled-components";
 
 const ImageDatePicker = props => {
-    console.log("image date picker props are", props)
-    console.log(props.value);
-    
+    //console.log("image date picker props are", props)
+    //console.log(props.value);
+
     return (
         <>
         <h3>Select a date to see a photo from a different day!</h3>

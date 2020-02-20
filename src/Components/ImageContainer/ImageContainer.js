@@ -19,17 +19,17 @@ const ImageContainer = () => {
 
     //useEffect & axios call
 
-    useEffect(() => {
-       axios.get(`https://api.nasa.gov/planetary/apod?api_key=TXxvHkpZZY4xeM6D1YJIencMwn9y1gJk9tHB5HLt&date=${date}`)
-       .then(response => {
-           console.log(response.data);
-           //will probably update state here?
-           setImageData(response.data);
-       })
-       .catch(error => {
-           console.log("Error fetching data from space", error);
-       })
-    }, [date])
+    // useEffect(() => {
+    //    axios.get(`https://api.nasa.gov/planetary/apod?api_key=TXxvHkpZZY4xeM6D1YJIencMwn9y1gJk9tHB5HLt&date=${date}`)
+    //    .then(response => {
+    //        console.log(response.data);
+    //        //will probably update state here?
+    //        setImageData(response.data);
+    //    })
+    //    .catch(error => {
+    //        console.log("Error fetching data from space", error);
+    //    })
+    // }, [date])
 
  
     return (
