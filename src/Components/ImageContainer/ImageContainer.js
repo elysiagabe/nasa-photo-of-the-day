@@ -2,12 +2,13 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import Image from "./Image";
 import ImageInfo from "./ImageInfo";
+import ImageDatePicker from "./ImageDatePicker"
 import "./ImageContainer.css";
 
 const ImageContainer = () => {
     const d = new Date();
     let today = d.toISOString().split('T', 1)[0];
-    console.log(today);
+    //console.log(today);
     // console.log(d);
     // console.log(date);
 
@@ -17,6 +18,7 @@ const ImageContainer = () => {
     const [date, setDate] = useState(today);
 
     //useEffect & axios call
+
     useEffect(() => {
        axios.get(`https://api.nasa.gov/planetary/apod?api_key=TXxvHkpZZY4xeM6D1YJIencMwn9y1gJk9tHB5HLt&date=${date}`)
        .then(response => {
@@ -38,7 +40,7 @@ const ImageContainer = () => {
                 date={imageData.date} 
                 caption={imageData.explanation}
             />
-            <p>testing</p>
+            <ImageDatePicker value={date} setDate={setDate} max={today}/>
         </div>
     )
 }
