@@ -9,7 +9,7 @@ const ImageInfoCard = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 20px auto 20px;
-    padding: 0 20px 20px 20px;
+    padding-bottom: 20px;
 `;
 
 const ImageTitle = styled.h2`

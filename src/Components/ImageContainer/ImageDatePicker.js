@@ -1,14 +1,17 @@
 import React from "react";
+
 import styled from "styled-components";
 
 const DateFormHeader = styled.h3`
     font-size: 2.4rem;
     font-family: 'Muli';
     font-weight: 200;
+    text-align: center;
 `;
 
 const DatePickerForm = styled.form`
     margin-top: 20px;
+    text-align: center;
 `;
 
 const DateLabel = styled.label`
@@ -34,11 +37,13 @@ const ImageDatePicker = props => {
 
     return (
         <>
+         
         <DateFormHeader>Select a date to see a photo from a different day!</DateFormHeader>
         <DatePickerForm>
             <DateLabel>Date:</DateLabel>
             <DateInput type="date" value={props.value} onChange={e => props.setDate(e.target.value)} max={props.max}/>
         </DatePickerForm>
+        
         </>
     );
 }
